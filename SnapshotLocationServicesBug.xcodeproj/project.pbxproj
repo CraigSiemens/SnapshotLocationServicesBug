@@ -12,7 +12,19 @@
 		4481F8CF1E326E3E002FA88E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4481F8CD1E326E3E002FA88E /* Main.storyboard */; };
 		4481F8D11E326E3E002FA88E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4481F8D01E326E3E002FA88E /* Assets.xcassets */; };
 		4481F8D41E326E3E002FA88E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4481F8D21E326E3E002FA88E /* LaunchScreen.storyboard */; };
+		4481F8F21E327145002FA88E /* SnapshotLocationServicesBugUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4481F8F11E327145002FA88E /* SnapshotLocationServicesBugUITests.swift */; };
+		4481F8FA1E327154002FA88E /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4481F8F91E327154002FA88E /* SnapshotHelper.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4481F8F41E327145002FA88E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4481F8BE1E326E3E002FA88E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4481F8C51E326E3E002FA88E;
+			remoteInfo = SnapshotLocationServicesBug;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		4481F8C61E326E3E002FA88E /* SnapshotLocationServicesBug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnapshotLocationServicesBug.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,10 +34,21 @@
 		4481F8D01E326E3E002FA88E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4481F8D31E326E3E002FA88E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4481F8D51E326E3E002FA88E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4481F8EF1E327145002FA88E /* SnapshotLocationServicesBugUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SnapshotLocationServicesBugUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4481F8F11E327145002FA88E /* SnapshotLocationServicesBugUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapshotLocationServicesBugUITests.swift; sourceTree = "<group>"; };
+		4481F8F31E327145002FA88E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4481F8F91E327154002FA88E /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapshotHelper.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		4481F8C31E326E3E002FA88E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4481F8EC1E327145002FA88E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,6 +62,7 @@
 			isa = PBXGroup;
 			children = (
 				4481F8C81E326E3E002FA88E /* SnapshotLocationServicesBug */,
+				4481F8F01E327145002FA88E /* SnapshotLocationServicesBugUITests */,
 				4481F8C71E326E3E002FA88E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				4481F8C61E326E3E002FA88E /* SnapshotLocationServicesBug.app */,
+				4481F8EF1E327145002FA88E /* SnapshotLocationServicesBugUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -62,6 +87,16 @@
 				4481F8D51E326E3E002FA88E /* Info.plist */,
 			);
 			path = SnapshotLocationServicesBug;
+			sourceTree = "<group>";
+		};
+		4481F8F01E327145002FA88E /* SnapshotLocationServicesBugUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4481F8F11E327145002FA88E /* SnapshotLocationServicesBugUITests.swift */,
+				4481F8F91E327154002FA88E /* SnapshotHelper.swift */,
+				4481F8F31E327145002FA88E /* Info.plist */,
+			);
+			path = SnapshotLocationServicesBugUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -84,6 +119,24 @@
 			productReference = 4481F8C61E326E3E002FA88E /* SnapshotLocationServicesBug.app */;
 			productType = "com.apple.product-type.application";
 		};
+		4481F8EE1E327145002FA88E /* SnapshotLocationServicesBugUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4481F8F61E327145002FA88E /* Build configuration list for PBXNativeTarget "SnapshotLocationServicesBugUITests" */;
+			buildPhases = (
+				4481F8EB1E327145002FA88E /* Sources */,
+				4481F8EC1E327145002FA88E /* Frameworks */,
+				4481F8ED1E327145002FA88E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4481F8F51E327145002FA88E /* PBXTargetDependency */,
+			);
+			name = SnapshotLocationServicesBugUITests;
+			productName = SnapshotLocationServicesBugUITests;
+			productReference = 4481F8EF1E327145002FA88E /* SnapshotLocationServicesBugUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -97,6 +150,11 @@
 					4481F8C51E326E3E002FA88E = {
 						CreatedOnToolsVersion = 8.2.1;
 						ProvisioningStyle = Automatic;
+					};
+					4481F8EE1E327145002FA88E = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 4481F8C51E326E3E002FA88E;
 					};
 				};
 			};
@@ -114,6 +172,7 @@
 			projectRoot = "";
 			targets = (
 				4481F8C51E326E3E002FA88E /* SnapshotLocationServicesBug */,
+				4481F8EE1E327145002FA88E /* SnapshotLocationServicesBugUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -129,6 +188,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4481F8ED1E327145002FA88E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -141,7 +207,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4481F8EB1E327145002FA88E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4481F8F21E327145002FA88E /* SnapshotLocationServicesBugUITests.swift in Sources */,
+				4481F8FA1E327154002FA88E /* SnapshotHelper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4481F8F51E327145002FA88E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4481F8C51E326E3E002FA88E /* SnapshotLocationServicesBug */;
+			targetProxy = 4481F8F41E327145002FA88E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		4481F8CD1E326E3E002FA88E /* Main.storyboard */ = {
@@ -278,6 +361,30 @@
 			};
 			name = Release;
 		};
+		4481F8F71E327145002FA88E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SnapshotLocationServicesBugUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.craigsiemens.SnapshotLocationServicesBugUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = SnapshotLocationServicesBug;
+			};
+			name = Debug;
+		};
+		4481F8F81E327145002FA88E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SnapshotLocationServicesBugUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.craigsiemens.SnapshotLocationServicesBugUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = SnapshotLocationServicesBug;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -295,6 +402,14 @@
 			buildConfigurations = (
 				4481F8D91E326E3E002FA88E /* Debug */,
 				4481F8DA1E326E3E002FA88E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		4481F8F61E327145002FA88E /* Build configuration list for PBXNativeTarget "SnapshotLocationServicesBugUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4481F8F71E327145002FA88E /* Debug */,
+				4481F8F81E327145002FA88E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

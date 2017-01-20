@@ -13,23 +13,18 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
 
     let locationManager = CLLocationManager()
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        if CLLocationManager.authorizationStatus() == .authorizedAlways {
-            showLocationServicesIcon()
-        } else {
+    @IBAction func requestPermissionsTapped(_ sender: Any) {
+        if CLLocationManager.authorizationStatus() != .authorizedAlways {
             locationManager.requestAlwaysAuthorization()
         }
     }
-
-    func showLocationServicesIcon() {
-        locationManager.startMonitoringSignificantLocationChanges()
-    }
     
-    func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
-        guard status == .authorizedAlways else { fatalError() }
-        showLocationServicesIcon()
+    @IBAction func showLocationServicesIconTapped(_ sender: Any) {
+        let coordinate = CLLocationCoordinate2D(latitude: 0, longitude: 0)
+        let region = CLCircularRegion(center: coordinate, radius: 100, identifier: "test")
+        locationManager.startMonitoring(for: region)
+
+        // Does not work with this
+//        locationManager.startMonitoringSignificantLocationChanges()
     }
 }
-
